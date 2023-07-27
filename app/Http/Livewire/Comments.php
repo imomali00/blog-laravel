@@ -31,7 +31,6 @@ class Comments extends Component
     /**
      *
      * @return mixed
-     * @author Zura Sekhniashvili <zurasekhniashvili@gmail.com>
      */
     private function selectComments()
     {
