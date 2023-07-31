@@ -29,7 +29,7 @@
             Imomali Blog
         </a>
         <p class="text-lg text-gray-600">
-           You can read daily posts
+            You can read daily posts
         </p>
     </div>
 </header>
@@ -47,13 +47,14 @@
     </div>
     <div :class="open ? 'block': 'hidden'" class="w-full flex-grow sm:flex sm:items-center sm:w-auto">
         <div
-            class="w-full container mx-auto flex flex-col sm:flex-row items-center justify-between text-sm font-bold uppercase mt-0 px-6 py-2">
+            class="w-full container mx-auto flex flex-row sm:flex-row items-center justify-between text-sm font-bold uppercase mt-0 px-6 py-2">
             <div>
                 <a href="{{route('home')}}" class="hover:bg-blue-600 hover:text-white rounded py-2 px-4 mx-2">Home</a>
                 @auth()
-                @foreach($categories as $category)
-                    <a href="{{route('by-category', $category)}}" class="hover:bg-blue-600 hover:text-white rounded py-2 px-4 mx-2">{{$category->title}}</a>
-                @endforeach
+                    @foreach($categories as $category)
+                        <a href="{{route('by-category', $category)}}"
+                           class="hover:bg-blue-600 hover:text-white rounded py-2 px-4 mx-2">{{$category->title}}</a>
+                    @endforeach
                 @endauth
             </div>
 
@@ -114,7 +115,7 @@
 
 <footer class="w-full border-t bg-white pb-12">
     <div class="w-full container mx-auto flex flex-col items-center">
-        <div class="uppercase py-6">&copy; myblog.com</div>
+        <div class="uppercase py-6">&copy; myblog.com</div
     </div>
 </footer>
 @livewireScripts
